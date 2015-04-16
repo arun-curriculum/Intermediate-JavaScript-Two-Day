@@ -143,3 +143,10 @@ document.getElementById("my-div").innerHTML = "<span>New HTML here</span>";
 	- Step 3: Bind a click event to the set score button and set the innerHTML of the score display to the score entered in the text box.
 	- **Bonus:** Create a check in your code to make sure the score will not go negative.
 	- **Super Bonus:** Create a function to make the changes to the score display rather than having to write your logic over and over.
+
+##Tic-Tac-Toe Lab
+- We will be coding the game of Tic-Tac-Toe from scratch.
+- There is so HTML written for you already so you will have to develop your own.
+- For the basic requirements don't do any win checking.
+- Make sure to account for a space that is already taken.
+- **Bonus:** Check for a win and stop the game when a win is detected.
