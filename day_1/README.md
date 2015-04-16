@@ -47,13 +47,12 @@ document.querySelectorAll("#my-div.my-class");
 Getter
 
 ```
-div.setAttribute("style", "background-color: red;");
+div.getAttribute("id");
 ```
-
 Setter
 
 ```
-div.getAttribute("id");
+div.setAttribute("style", "background-color: red;");
 ```
 
 ##Dealing with Classes
