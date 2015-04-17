@@ -92,3 +92,48 @@ document.getElementById("some-div").innerHTML = template_html;
 - We will be creating a simple book list system using handlebars to take care of the templating.
 - The API for this exercise will be `http://daretodiscover.herokuapp.com/books`.
 - The HTML is already done for you [here](book_manager_html/).
+
+##Querying Real-Life APIs
+- API stands for Application Programmable Interface. It essentially gives you access to a limited set of the application's features in a structured and controlled way.
+- APIs vary in their implementations. There is usually no one-way to query all of them.
+- There are a few popular APIs that many developers implement:
+	- Facebook: Get user information and post statuses.
+	- Twitter: Get user information and post tweets.
+	- Google Maps: Render maps based on location data with custom markers.
+	- Meetup: Get location-based event information.
+
+##Query Structure
+- Many times the query will exist in the URL of the request.
+- Let's take a look at a popular API for getting information about movies: [http://www.omdbapi.com/](http://www.omdbapi.com/).
+- Queries can be made by adding to the URL:
+
+General Search
+
+```
+http://www.omdbapi.com/?s=The+Avengers
+```
+
+Pull by title
+
+```
+http://www.omdbapi.com/?t=The+Avengers
+```
+
+##Formatting Data
+- In order to use data entered by a user for the query it is important to format it appropriately for use in a URL.
+- JavaScript has a built-in method to do this:
+
+```
+var query = document.getElementById("query").value;
+
+encodeURIComponent(query);
+```
+
+##API Exercise: Getting Movie Information
+- OMDb is an open API that gives us access to movie information.
+- Let's check out the documentation [here](http://www.omdbapi.com/).
+- Check out how you can make queries to the API using query string parameters (?t=My+Title).
+- Here are the steps you will need to take:
+	- Step 1: Create a simple form that allows the user to enter a movie title of their choice.
+	- Step 2: Query the API using the entered title and display the JSON results in the console.
+	- Step 3: Take the JSON and create a Handlebars template to show the information. The HTML has already been completed for you [here](movie_starter_app/).
