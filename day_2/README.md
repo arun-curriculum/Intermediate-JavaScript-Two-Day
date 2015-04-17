@@ -134,6 +134,6 @@ encodeURIComponent(query);
 - Let's check out the documentation [here](http://www.omdbapi.com/).
 - Check out how you can make queries to the API using query string parameters (?t=My+Title).
 - Here are the steps you will need to take:
-	- Step 1: Create a simple form that allows the user to enter a movie title of their choice.
+	- Step 1: Grab the information that the user enters into the form.
 	- Step 2: Query the API using the entered title and display the JSON results in the console.
 	- Step 3: Take the JSON and create a Handlebars template to show the information. The HTML has already been completed for you [here](movie_starter_app/).
